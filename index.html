@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اپلیکیشن حسابداری ماژولار</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.font-face.ir/css/sahel/sahel.css" />
+    <link rel="stylesheet" href="https://cdn.font-face.ir/css/tanha/tanha.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+      .font-vazirmatn { font-family: 'Vazirmatn', sans-serif; }
+      .font-sahel { font-family: 'Sahel', sans-serif; }
+      .font-tanha { font-family: 'Tanha', sans-serif; }
+    </style>
+    <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'custom-blue-primary': '#3399FF',
+            'custom-blue-light': '#99CCFF',
+            'custom-aqua-accent': '#66FFFF',
+          },
+          keyframes: {
+            'fade-in-down': {
+              '0%': {
+                opacity: '0',
+                transform: 'translateY(-10px)'
+              },
+              '100%': {
+                opacity: '1',
+                transform: 'translateY(0)'
+              },
+            }
+          },
+          animation: {
+            'fade-in-down': 'fade-in-down 0.2s ease-out'
+          }
+        }
+      }
+    }
+  </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "recharts/": "https://aistudiocdn.com/recharts@^3.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-100 dark:bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
